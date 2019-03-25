@@ -1,3 +1,8 @@
+# This script was written to convert the ComplexHistogram.dat file (an output of fpr) in to a human-readable and plotable format. 
+# it currently lacks the efficient sync needed between the columns, meaning at every block of info reports (between two iterations)
+# it does not account for the species that were not reported, hence there happens to be a shift in the data.
+
+
 import sys
 
 file=open(sys.argv[1],"r")
